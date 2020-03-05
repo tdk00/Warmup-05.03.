@@ -13,15 +13,13 @@ public class StringCheckRotated {
     }
     public boolean check(String origin, String rotated) {
 
-        if(origin.length()!=rotated.length()){
-            return false;
-        }
-        else if(countUnique(origin).equals(countUnique(rotated))){
-            return true;
-        }
-        else{
-            return false;
-        }
+      return countUnique(origin).equals(countUnique(rotated))?true:false;
+//         if(countUnique(origin).equals(countUnique(rotated))){
+//            return true;
+//        }
+//        else{
+//            return false;
+//        }
 
       //  throw new IllegalArgumentException("should be implemented");
     }
