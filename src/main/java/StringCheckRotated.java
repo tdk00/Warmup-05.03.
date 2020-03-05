@@ -26,7 +26,7 @@ public class StringCheckRotated {
 
 
     public boolean check(String origin, String rotated){
-        return (origin+origin).contains(rotated)?true:false;
+        return ((origin+origin).contains(rotated))&&(origin.length()==rotated.length())?true:false;
         // if string is rotated then two copies of original will contain the rotated one as substring
     }
 
