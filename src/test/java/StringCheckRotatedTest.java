@@ -34,7 +34,7 @@ class StringCheckRotatedTest {
 
     @Test
     void check5() {
-        assertTrue(func.check("Hello World", "rldHello Wo"));
+        assertTrue(func.check("Hello World", "rlHellod Wo"));
     }
 
 }

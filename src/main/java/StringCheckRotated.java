@@ -11,9 +11,9 @@ public class StringCheckRotated {
         }
         return data;
     }
-    public boolean check(String origin, String rotated) {
+    public boolean permutation(String origin, String rotated) {
 
-      return countUnique(origin).equals(countUnique(rotated))?true:false;
+        return countUnique(origin).equals(countUnique(rotated)) ? true : false;
 //         if(countUnique(origin).equals(countUnique(rotated))){
 //            return true;
 //        }
@@ -21,7 +21,13 @@ public class StringCheckRotated {
 //            return false;
 //        }
 
-      //  throw new IllegalArgumentException("should be implemented");
+        //  throw new IllegalArgumentException("should be implemented");
+    }
+
+
+    public boolean check(String origin, String rotated){
+        return (origin+origin).contains(rotated)?true:false;
+        // if string is rotated then two copies of original will contain the rotated one as substring
     }
 
 
